@@ -151,8 +151,7 @@ JWT_SECRET_KEY= 'eki-secret-key'
 
 ```bash
 
-https://sqlitestudio.pl/
-https://github.com/EKI-INDRADI/eki-latihan-nestjs-sqlite-portable-file-upload
+
 
 https://github.com/EKI-INDRADI/eki-latihan-vm-alpine-docker-portable
 
@@ -172,6 +171,8 @@ https://github.com/EKI-INDRADI/eki-latihan-nestjs-http-module-rxjs-8
 
 https://github.com/EKI-INDRADI/eki-latihan-docker-rabbitmq
 https://github.com/EKI-INDRADI/eki-latihan-nestjs-rabbitmq
+
+https://github.com/EKI-INDRADI/eki-latihan-nestjs-sqlite-portable-file-upload
 
 ```
 
