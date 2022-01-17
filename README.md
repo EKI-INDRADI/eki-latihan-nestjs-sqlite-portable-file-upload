@@ -99,6 +99,12 @@ nest --version
 ## ==== STAGE 13 = PORTABLE FILE UPLOAD UP TO 274k GB
 
 
+<details>
+  <summary>20220117-0048-SQLITE-EXPRESS-CRUD-FILE-UPLOAD</summary>
+
+```bash
+
+
 npm install @nestjs/serve-static (public folder)
 npm install sqlite3 --save
 
@@ -129,71 +135,6 @@ pada direktory ./simple_pos
 SQLITE_DATABASE = 'simple_pos'
 JWT_SECRET_KEY= 'eki-secret-key'
 
-<details>
-  <summary>20211126-0044-MYSQL-TO-MIGRATION-POSTGRESQL</summary>
-
-```bash
-/044
-
-// ===================== MIGRATION MYSQL TO POSTGRESQL
-1. install postgresql database
-
-2. create database simple_pos
-
-3. npm uninstall mysql2
-
-4. delete node_modules
-
-5. npm i
-
-6. npm install pg
-
-7. rubah .env 
-
---- before
-
-MYSQL_HOST = '127.0.0.1'
-MYSQL_PORT = '3400'
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'masuk123'
-MYSQL_DATABASE = 'simple_pos'
-JWT_SECRET_KEY= 'eki-secret-key'
-
---- /before
-
---- after
-
-POSTGRESQL_HOST = '127.0.0.1'
-POSTGRESQL_PORT = '5400'
-POSTGRESQL_USER = 'postgres'
-POSTGRESQL_PASSWORD = 'masuk123'
-POSTGRESQL_DATABASE = 'simple_pos'
-JWT_SECRET_KEY= 'eki-secret-key'
-
---- /after
-
-8. disable sementara code pada src\user\user.controller.ts
-// @ApiBearerAuth() 
-// @UseGuards(JwtGuard) 
-
-lalu buat pada http://localhost:3000/api-docs/
-POST /USER 
-{
-  "nama_user": "stringst",
-  "email": "string@mail.com",
-  "username": "stringst",
-  "password": "stringst"
-}
-
-
-9. setelah selesai code pada src\user\user.controller.ts
-enable kembali 
-@ApiBearerAuth() 
-@UseGuards(JwtGuard) 
-
-10. selesai maka seluruh table akan otomatis terbuat , dan langsung dapat digunakan, persis seperti pada MySQL
-
-// ===================== MIGRATION MYSQL TO POSTGRESQL
 
 ```
 
