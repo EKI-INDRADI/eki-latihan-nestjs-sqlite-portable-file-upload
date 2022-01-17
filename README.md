@@ -103,7 +103,10 @@ nest --version
   <summary>20220117-0048-SQLITE-EXPRESS-CRUD-FILE-UPLOAD</summary>
 
 ```bash
-
+database client menggunakan
+"Database Client for Visual Studio Code cweijan"
+cari extention "cweijan" pada extention visual studio code
+atau menggunakan "SQLite Studio" https://sqlitestudio.pl/
 
 npm install @nestjs/serve-static (public folder)
 npm install sqlite3 --save
