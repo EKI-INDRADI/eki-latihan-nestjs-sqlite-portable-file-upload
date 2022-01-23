@@ -32,7 +32,14 @@ import { join } from 'path';
     AuthModule,
     FilesModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'client'),
+      // https://github.com/nestjs/nest/blob/master/sample/24-serve-static/src/app.module.ts
+      rootPath: join(__dirname, '..', 'assets' , 'files'),
+      // exclude: ['/api*']
+
+
+      // call image :
+      // http://localhost:3000/1.png
+      // http://localhost:3000/folder/2.png
     }),
   ],
   controllers: [AppController],

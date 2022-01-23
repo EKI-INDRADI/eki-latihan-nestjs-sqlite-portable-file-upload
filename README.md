@@ -143,6 +143,30 @@ JWT_SECRET_KEY= 'eki-secret-key'
 
 </details>
 
+
+<details>
+  <summary>20220123-0048-SQLITE-EXPRESS-CRUD-FILE-UPLOAD-001</summary>
+
+```bash
+PUBLIC FOLDER
+
+update rnd-nestjs-sqlite\src\app.module.ts
+
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'assets' , 'files'),
+    }),
+
+example call public file :
+http://localhost:3000/1.png
+http://localhost:3000/folder/2.png
+
+
+reference : https://github.com/nestjs/nest/blob/master/sample/24-serve-static/src/app.module.ts
+
+```
+
+</details>
+
 ## ==== /STAGE 13 = PORTABLE FILE UPLOAD UP TO 274k GB
 
 
@@ -150,8 +174,6 @@ JWT_SECRET_KEY= 'eki-secret-key'
 ## REFERENSI :
 
 ```bash
-
-
 
 https://github.com/EKI-INDRADI/eki-latihan-vm-alpine-docker-portable
 
