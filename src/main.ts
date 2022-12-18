@@ -41,6 +41,6 @@ async function bootstrap() {
   SwaggerModule.setup('api-docs', app, swaggerDocument, configCustomSwagger)
   // api-docs = routes
   //============== /SWAGGER
-  await app.listen(3000);
+  await app.listen(3500);
 }
 bootstrap();
